@@ -1,0 +1,6 @@
+# -*- coding: utf-8 -*-
+
+quanto_custa_por_hora = input("Digite quanto custa por hora: ")
+total_de_horas_gastas = input ("Digite o total de horas gastas: ")
+custo_total = float(quanto_custa_por_hora) * float(total_de_horas_gastas)
+print (f"o custo total do artefato é {custo_total}")

@@ -1,0 +1,9 @@
+dados_modelo = {
+    "id" : 101,
+    "loss" : 0.15,
+    "latency" : 450
+}
+id_do_modelo = dados_modelo["id"]
+loss_do_modelo = dados_modelo ["loss"]
+print(f"ID do modelo: {id_do_modelo}")
+print(f"Loss do modelo: {loss_do_modelo}")

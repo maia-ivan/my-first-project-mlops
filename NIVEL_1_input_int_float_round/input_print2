@@ -1,0 +1,10 @@
+# -*- coding: utf-8 -*-
+
+erros_de_log = input("Digite os erros de log ")
+falhas_de_conexao_da_api = input("Digite as falhas de conexão da API ")
+erros_de_log = int(erros_de_log)
+falhas_de_conexao_da_api = int(falhas_de_conexao_da_api)
+total_de_erros = erros_de_log + falhas_de_conexao_da_api
+print(f"O total de erros é {total_de_erros}")     
+
+ 

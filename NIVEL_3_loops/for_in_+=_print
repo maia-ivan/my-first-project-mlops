@@ -1,0 +1,5 @@
+custo_total = 0.0
+valores_em_dolares_de_4_execucoes = [5.50, 12.75, 8.00, 3.25]
+for valor in valores_em_dolares_de_4_execucoes:
+    custo_total += valor
+print(f"O custo total das 4 execuções é {custo_total}")

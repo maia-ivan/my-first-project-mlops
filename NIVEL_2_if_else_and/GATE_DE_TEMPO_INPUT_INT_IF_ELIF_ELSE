@@ -1,0 +1,20 @@
+
+
+LIMITE_MAX = 60
+LIMITE_ALERTA = 30
+tempo_de_execucao_em_minutos_em_str = input ("Digite o tempo de execuçäo em minutos: ")
+tempo_de_execucao_em_minutos = int (tempo_de_execucao_em_minutos_em_str)
+if tempo_de_execucao_em_minutos > LIMITE_MAX:
+    print ("❌Execedeu o limite máximo de minutos esperado.")
+elif tempo_de_execucao_em_minutos > LIMITE_ALERTA:
+    print ("⚠️Atenção: Está se aproximando do limite máximo de minutos esperado.")
+else:
+    print ("✅Tempo de execução dentro do esperado.")
+
+status_disponibilidade = input ("Digite o status de disponibilidade (sim/näo): ")
+status_de_manutencao = input ("Digite o status de manutenção (sim/näo): ")
+if status_disponibilidade == "sim" and status_de_manutencao == "näo":
+    print ("✅O sistema está operacional.")
+else:
+    print ("❌O sistema não está operacional.")
+    

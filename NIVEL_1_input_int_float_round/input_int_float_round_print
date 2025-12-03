@@ -1,0 +1,10 @@
+# -*- coding: utf-8 -*-
+
+
+qual_o_numero_de_epocas_de_treinamento = input ("Qual o número de épocas de treinamento? ")
+qual_o_loss_final = input("Qual o loss final? ")
+qual_o_numero_de_epocas_de_treinamento = int (qual_o_numero_de_epocas_de_treinamento)
+qual_o_loss_final = float (qual_o_loss_final)
+loss_medio = qual_o_loss_final / qual_o_numero_de_epocas_de_treinamento
+loss_medio = round (loss_medio, 3)
+print (f"O loss médio por época é {loss_medio}")

@@ -1,0 +1,9 @@
+def checar_qualidade(loss, limite):
+    if loss < limite:
+        return "✅ O loss está dentro do limite aceitável."
+    else:
+        return "❌ O loss está acima do limite aceitável."
+resultado_teste_1 = checar_qualidade(0.09, 0.10)
+print(resultado_teste_1)
+
+

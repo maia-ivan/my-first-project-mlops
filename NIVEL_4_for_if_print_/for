@@ -1,0 +1,18 @@
+LIMITE_LOSS = 0.10
+lista_de_losses = [0.15, 0.08, 0.22, 0.09, 0.11]
+print("--- Início da verificação de losses ---")
+
+for loss_atual in lista_de_losses:
+    # Nível 1: if
+    if loss_atual < LIMITE_LOSS:
+        # Nível 2: print
+        print(f"✅ O loss {loss_atual} está dentro do limite aceitável.")
+    # Nível 1: else (ALINHADO COM O IF)
+    else: 
+        # Nível 2: print
+        print(f"❌ O loss {loss_atual} está acima do limite aceitável.")
+        
+print("--- Verificação Finalizada ---")
+
+
+

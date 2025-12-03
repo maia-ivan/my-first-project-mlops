@@ -1,0 +1,5 @@
+# -*- coding: utf-8 -*-
+
+nome_do_engenheiro = input("Digite o nome do engenheiro: ")
+nome_do_artefato = input("Digite o nome do artefato: ")
+print(f"O engenheiro {nome_do_engenheiro} criou o artefato {nome_do_artefato}")

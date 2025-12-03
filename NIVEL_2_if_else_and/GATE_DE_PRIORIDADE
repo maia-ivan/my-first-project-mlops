@@ -1,0 +1,10 @@
+
+status_disponibilidade = input ("Digite o status de disponibilidade (sim/näo): ")
+status_de_manutencao = input ("Digite o status de manutenção (sim/näo): ")
+if status_disponibilidade == "sim" and status_de_manutencao == "näo":
+    print ("✅O sistema está operacional.")
+else:
+    print ("❌O sistema não está operacional.")
+
+    
+    
