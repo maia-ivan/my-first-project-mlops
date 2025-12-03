@@ -1,0 +1,13 @@
+import pandas as pd
+
+dados = {
+    'id_modelo': [1, 2, 3],
+    'loss': [0.12, 0.05, 0.15],
+}
+
+df_modelos = pd.DataFrame(dados)
+condicao_rejeitados = df_modelos['loss'] > 0.10
+modelos_rejeitados = df_modelos[condicao_rejeitados]
+
+print("---- Modelos Rejeitados (loss > 0.10) ----")
+print(modelos_rejeitados)

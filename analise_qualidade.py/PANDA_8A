@@ -1,0 +1,11 @@
+import pandas as pd
+
+dados = {
+    'id_modelo': [1, 2, 3],
+    'loss': [0.12, 0.05, 0.15]
+}
+
+df_modelos = pd.DataFrame(dados)
+
+print(df_modelos.shape)
+
