@@ -1,5 +1,0 @@
-# -*- coding: utf-8 -*-
-
-qual_e_o_tipo_de_ambiente = input ("Digite o tipo de ambiente (desenvolvimento, homologação, produção)")
-qual_e_o_nome_do_usuario_reponsavel = input (" Digite o nome do usuário reponsável:")
-print (f"[DEPLOYMENT STATUS] \nUsuário reponsável: {qual_e_o_nome_do_usuario_reponsavel} \nAmbiente: {qual_e_o_tipo_de_ambiente}")

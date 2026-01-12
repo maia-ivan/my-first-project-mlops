@@ -24,6 +24,16 @@ Utilizei o checklist de 4 pilares para estruturar o desenvolvimento:
 
 ---
 
+## 🛠️ Stack Tecnológica
+- **Linguagem:** Python 3.10
+- **Dados:** yfinance & Pandas
+- **CI/CD:** GitHub Actions
+- **Containerização:** Docker
+- **Infraestrutura:** Terraform (IaC)
+
+---
+
+
 ### 🚀 Como executar o projeto
 1. Clone o repositório:
    ```bash

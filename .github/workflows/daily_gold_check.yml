@@ -19,9 +19,7 @@ jobs:
           python-version: '3.10'
 
       - name: Install dependencies
-        run: |
-          pip install yfinance pandas
+        run: pip install -r requirements.txt
 
       - name: Run Gold Validator
         run: python market_data_validator.py
-        

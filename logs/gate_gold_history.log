@@ -1,0 +1,2 @@
+2026-01-12 12:18:20,783 - INFO - PASSED: Gold Futures data is clean.
+2026-01-12 17:26:56,315 - INFO - Dados processados. Variação: 2.71%. Análise IA: Erro ao conectar com Ollama: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
