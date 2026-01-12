@@ -1,0 +1,27 @@
+name: Daily Gold Quality Check
+
+on:
+  schedule:
+    - cron: '0 12 * * *' # Roda todo dia às 12:00 UTC (9h da manhã no Brasil)
+  workflow_dispatch: # Permite que você rode manualmente pelo site do GitHub
+
+jobs:
+  check-gold:
+    runs-on: ubuntu-latest # O computador que o GitHub vai nos emprestar (Linux)
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+
+      - name: Install dependencies
+        run: |
+          pip install yfinance pandas
+
+      - name: Run Gold Validator
+        run: python market_data_validator.py
+        
