@@ -1,58 +1,74 @@
-# 🚀 Projeto 01: Gate de Qualidade para MLOps
 
-### 🔍 O que este projeto faz?
-Este é o primeiro pilar da minha jornada em Engenharia de MLOps. O objetivo aqui é criar uma camada de segurança (**Gate de Qualidade**) que valida os dados de entrada antes que eles cheguem ao modelo de Inteligência Artificial.
+# 🛡️ Sentinel AI: De Gates de Qualidade a LLMs em Containers
 
-Na engenharia de dados, chamamos isso de prevenção de "Garbage In, Garbage Out" (Lixo entra, Lixo sai).
+### 🔍 A Evolução do Projeto
 
----
+Este repositório iniciou como um **Gate de Qualidade** (Quality Gate) para validar métricas de performance de modelos. Hoje, ele evoluiu para o **Sentinel AI**: um monitor de mercado inteligente que integra **FastAPI** e **IA Generativa (Llama 3.2)** para transformar dados financeiros brutos em análises técnicas automatizadas.
 
-### 🛠️ Pilares de Engenharia Aplicados
-Utilizei o checklist de 4 pilares para estruturar o desenvolvimento:
-
-1. **Entrada (Input):** Leitura de métricas de performance de modelos via arquivos CSV.
-2. **Processamento (Lógica):** Implementação de regras de negócio para validar `Loss` e `Acurácia`.
-3. **Saída (Output):** Veredito automático de aprovação ou rejeição do modelo para produção.
-4. **Gestão (Infra):** Versionamento completo do código e histórico de mudanças usando **Git e GitHub**.
+O objetivo mudou de "validar dados estáticos" para **"gerar insights em tempo real com infraestrutura profissional"**.
 
 ---
 
-### 💻 Tecnologias Utilizadas
-* **Python 3.x**: Linguagem base para processamento lógico.
-* **Pandas**: Biblioteca para manipulação e análise de dados.
-* **Git**: Controle de versão e rastreabilidade de código.
+### 🛠️ Pilares de Engenharia 2.0 (Foco em MLOps)
+
+A arquitetura foi redesenhada seguindo os padrões de mercado para garantir escalabilidade:
+
+1. **Data Ingestion:** Coleta assíncrona de ativos (ex: Ouro) via `yfinance`.
+2. **AI Reasoning:** Orquestração do modelo **Llama 3.2** para análise de sentimento e técnica.
+3. **Containerization (DevOps):** Todo o ecossistema roda em **Docker**, isolando dependências e garantindo que o código funcione em qualquer ambiente.
+4. **Hybrid Networking:** Implementação de ponte de rede (`host-gateway`) para permitir que o container Docker consuma a IA processada pelo hardware local (GPU/CPU via Ollama).
+5. **Quality Gate 2.0:** A lógica de validação agora atua no refinamento do prompt e na limpeza de dados da IA.
 
 ---
 
-## 🛠️ Stack Tecnológica
-- **Linguagem:** Python 3.10
-- **Dados:** yfinance & Pandas
-- **CI/CD:** GitHub Actions
-- **Containerização:** Docker
-- **Infraestrutura:** Terraform (IaC)
+### 💻 Stack Tecnológica
+
+* **Linguagem:** Python 3.11 (Otimizado para FastAPI).
+* **Interface:** FastAPI (Documentação automática via Swagger).
+* **Inteligência Artificial:** Ollama & Llama 3.2.
+* **Infraestrutura:** Docker & Docker Desktop.
+* **Dados:** Yahoo Finance API.
 
 ---
 
+### 🚀 Como Executar a Nova Versão
 
-### 🚀 Como executar o projeto
-1. Clone o repositório:
-   ```bash
-   git clone [https://github.com/maia-ivan/my-first-project-mlops.git](https://github.com/maia-ivan/my-first-project-mlops.git)
+A grande evolução é que você não precisa mais instalar bibliotecas manualmente na sua máquina. O **Docker** cuida de tudo:
 
+1. **Construir a Imagem:**
+```bash
+docker build -t sentinel-ai .
 
-   -
-
-Instale as dependências:
-
-Bash
-
-pip install pandas
+```
 
 
--
+2. **Rodar com Integração de IA:**
+```bash
+docker run -p 8000:8000 --add-host=host.docker.internal:host-gateway sentinel-ai
 
-Execute o validador:
+```
 
-Bash
 
-python analise_qualidade.py
+3. **Ver o Resultado:**
+Acesse: `http://127.0.0.1:8000/analisar/ouro`
+
+---
+
+### 🧠 Lições de Engenharia (Desafios Superados)
+
+Este projeto reflete a superação de problemas reais de infraestrutura:
+
+* **BIOS e Virtualização:** Configuração de hardware para suporte a Hyper-V e WSL2.
+* **Docker Networking:** Resolução de conflitos de `localhost` entre container e host.
+* **Data Cleaning:** Tratamento de respostas de LLMs (removendo caracteres especiais e quebras de linha indesejadas).
+
+---
+
+### 📈 Próximos Passos
+
+* [ ] Adicionar suporte a múltiplos ativos simultâneos.
+* [ ] Implementar persistência de dados (Banco de Dados no Docker).
+* [ ] Criar interface visual (Frontend) para os relatórios.
+
+---
+
