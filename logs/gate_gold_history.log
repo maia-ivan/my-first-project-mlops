@@ -1,2 +1,4 @@
 2026-01-12 12:18:20,783 - INFO - PASSED: Gold Futures data is clean.
 2026-01-12 17:26:56,315 - INFO - Dados processados. Variação: 2.71%. Análise IA: Erro ao conectar com Ollama: Failed to connect to Ollama. Please check that Ollama is downloaded, running and accessible. https://ollama.com/download
+2026-01-12 17:44:10,538 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-01-12 17:44:10,539 - INFO - Dados processados. Variação: 2.75%. Análise IA: Com base nos dados fornecidos, podemos observar que o ouro apresenta uma média elevada de R$ 4.500,72 nos últimos 5 dias, com uma volatilidade moderada (77,67) e uma variação diária positiva de +2,75%.
